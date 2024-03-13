@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入金ページ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        入金ページ
+                    </div>
+                    <div class="card-body">
+                        <form action="/balance/deposit" method="post">
+                            <div class="mb-3">
+                                <label for="depositAmount" class="form-label">入金額</label>
+                                <input type="number" class="form-control" id="depositAmount" name="depositAmount">
+                            </div>
+                            <button type="submit" class="btn btn-success">入金する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
